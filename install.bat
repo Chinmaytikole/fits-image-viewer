@@ -1,4 +1,12 @@
 @echo off
+
+:: If not already running in persistent mode, relaunch inside cmd /k
+:: This guarantees the window stays open after the script finishes.
+if "%~1"=="--keep" goto main
+cmd /k "%~f0" --keep
+exit /b
+
+:main
 title AstroVision Install
 color 0E
 
@@ -74,5 +82,4 @@ goto end
 
 :end
 echo.
-echo  You can close this window now.
-cmd /k
+echo  Window will stay open. Close it manually when done.
