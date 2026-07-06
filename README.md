@@ -89,12 +89,7 @@ INFO:     Application startup complete.
 
 > **Windows shortcut:** double-click `start.bat` — it installs deps and launches the server automatically.
 
-> **Using a conda environment?** Activate it first:
-> ```powershell
-> conda activate your-env-name
-> pip install -r requirements.txt
-> uvicorn main:app --reload --port 8000
-> ```
+
 
 ---
 
@@ -278,12 +273,6 @@ uvicorn main:app --reload --port 8000
 ### "No 2D image data found in this FITS file"
 The file contains only binary tables (e.g. a catalogue), or is a non-image FITS product. Try a different file.
 
-### pip not found / wrong Python version
-Make sure you're using Python ≥ 3.10 and it's on your PATH. With Anaconda:
-```powershell
-conda activate base   # or your environment name
-pip install -r requirements.txt
-```
 
 ### Port 8000 already in use
 ```powershell
