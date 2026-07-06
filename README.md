@@ -67,12 +67,16 @@ You need **two terminals** running simultaneously — one for the backend, one f
 
 ---
 
-### Terminal 1 — Start the Backend (FastAPI)
+> 💡 **Quickest way to start:** double-click `start_backend.bat` in one window and `start_frontend.bat` in another — no typing needed.
+
+---
+
 
 ```powershell
 # Navigate to the backend folder
 cd fits_image_viewer\backend
-
+# Making env variable
+python -m venv venv
 # Install Python dependencies (only needed once)
 pip install -r requirements.txt
 
